@@ -45,11 +45,15 @@ export default function DestinationDetail({ destination }: DestinationDetailProp
           </div>
         )}
 
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-          <div>
-            <h3 className="mb-4 text-lg font-semibold text-zinc-900">Galeri</h3>
-            <MediaGallery media={destination.media} />
-          </div>
+        <div
+          className={`grid gap-10 ${destination.media.length > 0 ? "lg:grid-cols-2 lg:gap-12" : "max-w-3xl"}`}
+        >
+          {destination.media.length > 0 && (
+            <div>
+              <h3 className="mb-4 text-lg font-semibold text-zinc-900">Galeri</h3>
+              <MediaGallery media={destination.media} />
+            </div>
+          )}
 
           <div className="space-y-8">
             <dl className="grid gap-5 sm:grid-cols-2">

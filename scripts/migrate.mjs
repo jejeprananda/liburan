@@ -41,6 +41,27 @@ const highlandCampMedia = [
   })),
 ];
 
+const kolegaCampingFiles = [
+  "285b0f8d-5711-4652-814b-8715979a613b.jpeg",
+  "6c730131-a2bc-4760-85ee-5c556edb2ddb.jpeg",
+  "ada4eda0-0267-42b7-9d50-22b1ea6a6f2b.jpeg",
+  "9e04fa8f-a28d-4b21-b921-133baee47ad3.jpeg",
+  "604ba757-e652-4e01-b90b-21f8d7ba7593.jpeg",
+  "85c1cd92-86d5-4f7e-80bb-3630c083f624.jpeg",
+  "402cbd19-cbd2-4e4c-90cf-a0bb75197b2f.jpeg",
+  "3b7bac2b-f35a-47a2-88a4-900c2083cc1d.jpeg",
+  "c641b9d7-413b-4ad3-940c-10cc5c2a1dd5.jpeg",
+  "5eb86ff9-edf9-4351-9df5-d32677c30b6e.jpeg",
+  "12ae914b-1414-48cd-8487-092426168193.jpeg",
+  "541961b6-e544-46ac-9682-fd378651ef29.jpeg",
+];
+
+const kolegaCampingMedia = kolegaCampingFiles.map((file, index) => ({
+  type: "image",
+  src: `/image/kolegaCamping/${file}`,
+  alt: `Kolega Prioritas foto ${index + 1}`,
+}));
+
 const bukitGajahMedia = [
   { type: "video", src: "/image/BukitGajah/BukitGajah1.mp4", alt: "Bukit Gajah video 1" },
   { type: "video", src: "/image/BukitGajah/BukitGajah2.mp4", alt: "Bukit Gajah video 2" },
@@ -145,6 +166,48 @@ const seedDestinations = [
       "Untuk Sabtu ini masih aman. Hanya sekitar 1/2 lokasi area yang menghadap Gunung Salak sudah dibooking komunitas mobil (35 mobil/tenda). Sisa area tengah dan citylight masih aman.",
     cover_image: "/image/BukitGajah/bukitGajah1.jpeg",
     media: bukitGajahMedia,
+  },
+  {
+    id: "kolega-prioritas",
+    name: "Kolega Prioritas Camping Ground",
+    tagline: "Jongkon Highland — camping dekat Jabodetabek, 50 m dari jalan utama",
+    address:
+      "Jl. Gunung Batu, Bojong Koneng, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810",
+    province: "Jawa Barat",
+    travel_time: "1 j 16 mnt",
+    phone: "0821-1000-3959",
+    hours: "",
+    maps_url:
+      "https://www.google.com/maps/place/Kolega+Prioritas+Camping+Ground+~+Jongkon+Highland/data=!4m2!3m1!1s0x0:0x10cb9cfcdf922a5f?sa=X&ved=1t:2428&ictx=111",
+    pricing: [
+      {
+        label: "Campervan Pinus Area",
+        value: "Rp 200.000/kendaraan",
+        note: "Termasuk biaya 2 orang. Tambahan dewasa Rp 50.000/org. Anak under 6th Rp 25.000/org",
+      },
+      {
+        label: "Campervan Alun-Alun",
+        value: "Rp 200.000/kendaraan",
+        note: "Termasuk biaya 2 orang. Tambahan dewasa Rp 50.000/org. Anak under 6th Rp 25.000/org. Free listrik",
+      },
+    ],
+    facilities: [
+      "Camping Ground",
+      "Campervan Area",
+      "Glamping / Rumah Kayu",
+      "Trekking Area Sentul",
+      "The FourHands Cafe",
+    ],
+    views: [],
+    notes: [
+      "Campervan Pinus Area: power listrik di bawah pohon pinus, toilet & kran air ~5 meter. Kapasitas 2 kendaraan / 2 tenda (sharing).",
+      "Campervan Alun-Alun: free listrik.",
+      "Tidak jauh dari Jabodetabek, tidak jauh dari parkiran, hanya 50 meter dari jalan utama.",
+    ],
+    example_calculation: "",
+    availability_note: "",
+    cover_image: "/image/kolegaCamping/285b0f8d-5711-4652-814b-8715979a613b.jpeg",
+    media: kolegaCampingMedia,
   },
 ];
 
