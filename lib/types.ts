@@ -96,7 +96,7 @@ export function sortPackingItems(items: PackingItem[]): PackingItem[] {
   });
 }
 
-export const tripDate = new Date("2026-08-15T00:00:00+07:00");
+export const tripDate = new Date("2026-08-15T12:00:00+07:00");
 
 export function getWhatsAppUrl(phone: string): string {
   const digits = phone.replace(/\D/g, "");

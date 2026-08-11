@@ -62,6 +62,24 @@ const kolegaCampingMedia = kolegaCampingFiles.map((file, index) => ({
   alt: `Kolega Prioritas foto ${index + 1}`,
 }));
 
+const cibuluhMediaFiles = [
+  "cibuluh1.jpeg",
+  "cibuluh2.jpeg",
+  "cibuluh3.webp",
+  "cibuluh4.jpg",
+  "cibuluh5.jpeg",
+  "cibuluh6.jpg",
+  "cibuluh7.jpg",
+  "cibuluh8.jpeg",
+  "cibuluh9.png",
+];
+
+const cibuluhMedia = cibuluhMediaFiles.map((file, index) => ({
+  type: "image",
+  src: `/image/Cibuluh/${file}`,
+  alt: `Cibuluh Camping foto ${index + 1}`,
+}));
+
 const bukitGajahMedia = [
   { type: "video", src: "/image/BukitGajah/BukitGajah1.mp4", alt: "Bukit Gajah video 1" },
   { type: "video", src: "/image/BukitGajah/BukitGajah2.mp4", alt: "Bukit Gajah video 2" },
@@ -208,6 +226,51 @@ const seedDestinations = [
     availability_note: "",
     cover_image: "/image/kolegaCamping/285b0f8d-5711-4652-814b-8715979a613b.jpeg",
     media: kolegaCampingMedia,
+  },
+  {
+    id: "cibuluh-camping",
+    name: "Cibuluh Camping Ground",
+    tagline: "Camp & Adventure — sewa lahan 2 hari 1 malam di Bojong Koneng",
+    address:
+      "Bojong Koneng, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810",
+    province: "Jawa Barat",
+    travel_time: "1 j 13 mnt",
+    phone: "0812-9902-5297",
+    hours: "Tutup · Buka Sab pukul 06.00",
+    maps_url:
+      "https://www.google.com/maps/place/Cibuluh+Land+%22Camp+%26+Adventure%22/data=!4m2!3m1!1s0x0:0xe3874a46a12a6d8c?sa=X&ved=1t:2428&ictx=111",
+    pricing: [
+      {
+        label: "Sewa Lahan Camping (Paket Standar)",
+        value: "Rp 60.000",
+        note: "2 hari 1 malam. Termasuk: musholla, toilet, listrik, security, akses listrik charging & lighting, wisata sungai dan pemandian.",
+      },
+      {
+        label: "Sewa Lahan Camping (Paket Premium)",
+        value: "Rp 200.000",
+        note: "2 hari 1 malam. Termasuk: musholla, toilet, security, akses listrik charging & lighting, wisata sungai dan pemandian. Max 1 tenda berdampingan dengan mobil.",
+      },
+    ],
+    facilities: [
+      "Musholla",
+      "Toilet",
+      "Listrik",
+      "Security",
+      "Akses listrik untuk charging & lighting",
+      "Wisata sungai dan pemandian",
+    ],
+    views: [],
+    notes: [
+      "Untuk menghindari tanjakan terjal dan ruas sempit di Jl. Raya Bojong Koneng:",
+      "1. Arahkan map setelah exit tol Sentul Selatan/IKEA Sentul ke arah Bukit Pelangi/Kantor Desa Cijayanti (via Jl. Raya Cijayanti).",
+      "2. Dari Bukit Pelangi/Kantor Desa Cijayanti baru lanjut arahkan map ke Cibuluh Land \"Camp & Adventure\".",
+      "Noted: 600 m setelah KM 0 Sentul belok kiri (Sate Domba Hambalang) Jl. Sentul Paradise Park.",
+      "Noted: 900 m setelah La'Pico Cafe/Sawah Segar Resto menuju Camping Ground Cibuluh Land.",
+    ],
+    example_calculation: "",
+    availability_note: "",
+    cover_image: "/image/Cibuluh/cibuluh1.jpeg",
+    media: cibuluhMedia,
   },
 ];
 

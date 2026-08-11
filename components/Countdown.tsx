@@ -67,7 +67,9 @@ export default function Countdown() {
         <TimeUnit value={timeLeft.minutes} label="Menit" />
         <TimeUnit value={timeLeft.seconds} label="Detik" />
       </div>
-      <p className="text-sm text-white/70">Sabtu, 15 Agustus 2026</p>
+      <p className="text-sm text-white/70">
+        Sabtu, 15 Agustus 2026 · 12:00 WIB
+      </p>
     </div>
   );
 }
