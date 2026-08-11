@@ -80,6 +80,21 @@ const cibuluhMedia = cibuluhMediaFiles.map((file, index) => ({
   alt: `Cibuluh Camping foto ${index + 1}`,
 }));
 
+const titiknolMediaFiles = [
+  "titiknol1.png",
+  "titiknol2.png",
+  "titiknol3.png",
+  "titiknol4.png",
+  "titiknol5.png",
+  "titiknol.png",
+];
+
+const titiknolMedia = titiknolMediaFiles.map((file, index) => ({
+  type: "image",
+  src: `/image/titiknol/${file}`,
+  alt: `Titiknol Adventure foto ${index + 1}`,
+}));
+
 const bukitGajahMedia = [
   { type: "video", src: "/image/BukitGajah/BukitGajah1.mp4", alt: "Bukit Gajah video 1" },
   { type: "video", src: "/image/BukitGajah/BukitGajah2.mp4", alt: "Bukit Gajah video 2" },
@@ -271,6 +286,52 @@ const seedDestinations = [
     availability_note: "",
     cover_image: "/image/Cibuluh/cibuluh1.jpeg",
     media: cibuluhMedia,
+  },
+  {
+    id: "titiknol-adventure",
+    name: "Titiknol Adventure",
+    tagline: "Camping & adventure di Tajur Halang, Cijeruk",
+    address: "Jalan Titik Nol, Tajur Halang, Cijeruk, Bogor 16740",
+    province: "Jawa Barat",
+    travel_time: "",
+    phone: "0851-7318-9126",
+    hours: "",
+    maps_url:
+      "https://www.google.com/maps?ll=-6.676098,106.784863&z=13&t=m&hl=en-US&gl=US&mapclient=embed&cid=15951089678948143402",
+    pricing: [
+      {
+        label: "Camping",
+        value: "Rp 50.000/org",
+        note: "Anak di bawah 5 tahun gratis",
+      },
+      {
+        label: "Campervan",
+        value: "Rp 250.000/1 mobil",
+        note: "Max. 5 org. Anak di bawah 5 tahun gratis",
+      },
+    ],
+    facilities: [
+      "Sewa lahan",
+      "Parkir",
+      "Kolam renang",
+      "Lapangan bulu tangkis",
+      "Kolam ikan",
+      "Saung",
+      "Gazebo",
+      "Menara pandang",
+      "Musholla",
+      "Kamar mandi sharing",
+    ],
+    views: [],
+    notes: [
+      "Harga sudah termasuk sewa lahan, parkir, dan fasilitas TNAC.",
+      "Kontak via WhatsApp: +62 851-7318-9126",
+      "Email: info.titiknolcamp@gmail.com",
+    ],
+    example_calculation: "",
+    availability_note: "",
+    cover_image: "/image/titiknol/titiknol1.png",
+    media: titiknolMedia,
   },
 ];
 
